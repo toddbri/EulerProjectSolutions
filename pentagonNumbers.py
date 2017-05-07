@@ -1,10 +1,9 @@
+import math
 
-def isPentagonal(x):
-    a = 1
-    while pn(a) <= x:
-        if pn(a) == x:
-            return True
-        a +=1
+def isPentagonal(p):
+    n = (1 + math.sqrt(1+24*p))/6
+    if n - int(n) == 0:
+        return True
     return False
 
 def pn(a):
